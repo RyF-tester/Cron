@@ -9,7 +9,7 @@ If your hosting does not provide cron, then this class will help you to periodic
     include('Cron.php');//include class Cron
 
     $cron_with_file = Cron::App('some_file.php', 10);//Execute the file every 10 seconds
-    $cron_with_function = Cron::App(my_func, 20); //Execute the function every 10 seconds
+    $cron_with_function = Cron::App(my_func, 20); //Execute the function every 20 seconds
 
     function my_func(){
         echo 123;
